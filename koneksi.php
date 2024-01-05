@@ -1,7 +1,7 @@
 <?php
 
 $databaseHost = 'localhost';
-$databaseName = 'poliklinik';
+$databaseName = 'capstone';
 $databaseUsername = 'root';
 $databasePassword = '';
 

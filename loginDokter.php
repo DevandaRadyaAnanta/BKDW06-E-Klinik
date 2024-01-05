@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container py-5 h-100">
         <div class="row d-flex align-items-center justify-content-center h-100">
             <div class="col-md-8 col-lg-7 col-xl-6">
-                <img src="images/logo.png" class="img-fluid" alt="image">
+                <img src="logo.png" class="img-fluid" alt="image">
             </div>
             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                 <div>
@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <!-- NIP input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="nip">NIP</label>
-                        <input type="text" name="nip" required class="form-control form-control-lg" placeholder="Masukkan NIP anda" />
+                        <input type="text" name="nip" required class="form-control form-control-lg" placeholder="Masukkan NIP Anda" />
                     </div>
 
                     <!-- Password input -->

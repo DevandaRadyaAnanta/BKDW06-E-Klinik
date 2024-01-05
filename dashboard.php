@@ -8,12 +8,12 @@ include_once("koneksi.php");
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/DB_16х16.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-Klinik BK</title>
+    <title>E-Klinik</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -94,7 +94,7 @@ include_once("koneksi.php");
     </header>
 
     <div class="mdl-layout__drawer">
-        <header><img src="images/logo.png" width="40px" alt="">E-Klinik BK</header>
+        <header><img src="logo.png" width="40px" alt="">E-Klinik</header>
         <div class="scroll__wrapper" id="scroll__wrapper">
             <div class="scroller" id="scroller">
                 <div class="scroll__container" id="scroll__container">
@@ -126,10 +126,6 @@ include_once("koneksi.php");
                         <a class="mdl-navigation__link" href="dashboard.php?page=jadwalperiksa">
                             <i class="material-icons">multiline_chart</i>
                             Jadwal Periksa
-                        </a>
-                        <a class="mdl-navigation__link" href="dashboard.php?page=coba">
-                            <i class="material-icons">multiline_chart</i>
-                            Rawat Jalan
                         </a>
                     </nav>
                 </div>

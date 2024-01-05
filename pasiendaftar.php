@@ -62,7 +62,7 @@
                             ?>
                             <div class="form-group">
                                 <label for="no_rm">Nomor Rekam Medis (RM)</label>
-                                <input type="text" name="no_rm" class="form-control" required placeholder="Masukkan no rekam medis anda">
+                                <input type="text" name="no_rm" class="form-control" required placeholder="Masukkan no_rm anda">
                             </div>
                             <div class="text-center mt-3">
                                 <button type="submit" class="btn btn-outline-primary px-4 btn-block">Cari</button>
