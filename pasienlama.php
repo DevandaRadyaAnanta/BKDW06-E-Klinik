@@ -20,49 +20,48 @@ if (isset($_POST['cari'])) {
     }
 }
 ?>
-<br>
-<br>
-<div class="container col-md-9">
-    <!--Form Input Data-->
-    <form class="form col" method="POST" action="" name="myForm" onsubmit="return(validate());">
-        <!-- Kode php untuk menghubungkan form dengan database -->
-        <?php
-        $nama = '';
-        $alamat = '';
-        $no_ktp = '';
-        $no_hp = '';
-        $no_rm = '';
-        if (isset($_GET['id'])) {
-            $ambil = mysqli_query($mysqli, "SELECT * FROM pasien WHERE id='" . $_GET['id'] . "'");
-            while ($row = mysqli_fetch_array($ambil)) {
-                $nama = $row['nama'];
-                $alamat = $row['alamat'];
-                $no_ktp = $row['no_ktp'];
-                $no_hp = $row['no_hp'];
-                $no_rm = $row['no_rm'];
-            }
-        ?>
-            <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-        <?php
-        }
-        ?>
-        <div class="col mt-2">
-            <label for="inputNoKtp" class="form-label fw-bold">
-                No KTP
-            </label>
-            <div>
-                <input type="text" class="form-control" name="no_ktp" id="inputNoKtp" required placeholder="3319xxxxxxxxxxxx" value="<?php echo $no_ktp ?>">
+<div class="container" style="margin-top: 5.5rem;">
+        <div class="row justify-content-center">
+            <h2 class="text-center mb-4">Pasien Lama</h2>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center fw-bold" style="font-size: 1.5rem; background-color: #50E2FF;">MASUKKAN DATA ANDA</div>
+                    <div class="card-body my-4">
+                    <form class="form col" method="POST" action="" name="myForm" onsubmit="return(validate());">
+                            <!-- Kode php untuk menghubungkan form dengan database -->
+                            <?php
+                            $nama = '';
+                            $alamat = '';
+                            $no_ktp = '';
+                            $no_hp = '';
+                            $no_rm = '';
+                            if (isset($_GET['id'])) {
+                                $ambil = mysqli_query($mysqli, "SELECT * FROM pasien WHERE id='" . $_GET['id'] . "'");
+                                while ($row = mysqli_fetch_array($ambil)) {
+                                    $nama = $row['nama'];
+                                    $alamat = $row['alamat'];
+                                    $no_ktp = $row['no_ktp'];
+                                    $no_hp = $row['no_hp'];
+                                    $no_rm = $row['no_rm'];
+                                }
+                            ?>
+                                <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
+                            <?php
+                            }
+                            ?>
+                            <div class="form-group">
+                                <label for="inputNoKtp">No KTP</label>
+                                <input type="text" name="no_ktp" class="form-control" id="inputNoKtp" required placeholder="33xxxxxxxxxxxxxx" value="<?php echo $no_ktp ?>">
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-outline-primary px-4 btn-block" name="cari">Cari</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col mt-3">
-            <div class="col">
-                <button type="submit" class="btn btn-primary rounded-pill px-3 mt-auto" name="cari">Cari</button>
-            </div>
-        </div>
-    </form>
-    <br>
-    <br>
-    <!-- Table-->
+        <!-- Table-->
     <?php if ($showTable) : ?>
         <table class="table table-hover">
             <!--thead atau baris judul-->
