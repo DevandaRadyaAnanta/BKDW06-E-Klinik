@@ -14,24 +14,19 @@ if (isset($_GET['aksi'])) {
 }
 ?>
 
+<main class="mdl-layout__content ">
 <div class="mdl-grid ui-tables">
-
-    <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
-        <div class="mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__title">
-                <h1 class="mdl-card__title-text">Tabel Pasien</h1>
-            </div>
             <div class="mdl-card__supporting-text no-padding">
                 <table class="mdl-data-table mdl-js-data-table">
                     <thead>
                         <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Alamat</th>
-                            <th scope="col">Nomor KTP</th>
-                            <th scope="col">Nomor Handphone</th>
-                            <th scope="col">Nomor Rekam Medis</th>
-                            <th scope="col">Aksi</th>
+                            <th class="mdl-data-table__cell--non-numeric">No</th>
+                            <th class="mdl-data-table__cell">Nama</th>
+                            <th class="mdl-data-table__cell--non-numeric">Alamat</th>
+                            <th class="mdl-data-table__cell--non-numeric">Nomor KTP</th>
+                            <th class="mdl-data-table__cell--non-numeric">Nomor Handphone</th>
+                            <th class="mdl-data-table__cell--non-numeric">Nomor Rekam Medis</th>
+                            <th class="mdl-data-table__cell--non-numeric">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,3 +63,4 @@ if (isset($_GET['aksi'])) {
     </div>
 
 </div>
+</main>

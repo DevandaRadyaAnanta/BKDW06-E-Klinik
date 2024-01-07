@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-<main class="mdl-layout__content ui-form-components">
+
 
 <div class="mdl-grid mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
 
@@ -125,15 +125,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </div>
 
-<div class="mdl-grid ui-tables">
 
+<div class="mdl-grid ui-tables">
             <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h1 class="mdl-card__title-text">Tabel Obat</h1>
-                    </div>
-                    <div class="mdl-card__supporting-text no-padding">
-                        <table class="mdl-data-table mdl-js-data-table">
+                <div class="mdl-card mdl-shadow--5dp">
+                    <div class="table-responsive table--no-card m-b-30">
+                        <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
                                     <th class="mdl-data-table__cell--non-numeric">NO</th>

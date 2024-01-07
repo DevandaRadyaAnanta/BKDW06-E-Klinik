@@ -1,4 +1,4 @@
-# Capstone E-Klinik
+# E-Klinik
 
 # Login Admin
 

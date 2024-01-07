@@ -6,7 +6,6 @@
 <main class="mdl-layout__content ">
 
 <div class="mdl-grid ui-tables">
-
     <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
         <div class="mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
@@ -43,7 +42,7 @@
                         while ($data = mysqli_fetch_array($result)) :
                     ?>
                         <tr>
-                            <th scope="row"><?php echo $no++ ?></th>
+                            <th scope=""><?php echo $no++ ?></th>
                             <td><?php echo $data['nama'] ?></td>
                             <td><?php echo $data['no_antrian'] ?></td>
                             <td><?php echo $data['keluhan'] ?></td>

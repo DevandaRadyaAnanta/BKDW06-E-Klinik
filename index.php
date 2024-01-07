@@ -31,7 +31,13 @@ include_once("koneksi.php");
                         <a class="nav-link" aria-current="page" href="index.php?page=home">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.php?page=pasienbaru">Pasien Baru</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.php?page=pasienlama">Pasien Lama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.php?page=pasiendaftar">Daftar Poli</a>
                     </li>
                     <?php
                     if (isset($_SESSION['username'])) {

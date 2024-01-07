@@ -94,7 +94,7 @@ include_once("koneksi.php");
     </header>
 
     <div class="mdl-layout__drawer">
-        <header><img src="logo.png" width="50px" alt=""></header>
+        <header><img src="logo.png" width="40px" alt=""> E-Klinik</header>
         <div class="scroll__wrapper" id="scroll__wrapper">
             <div class="scroller" id="scroller">
                 <div class="scroll__container" id="scroll__container">
@@ -121,18 +121,6 @@ include_once("koneksi.php");
     <main class="mdl-layout__content">
 
         <div class="mdl-grid mdl-grid--no-spacing dashboard">
-
-            <div class="mdl-grid mdl-cell mdl-cell--9-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
-                <h2>
-                <?php
-                                if (isset($_GET['page'])) {
-                                    echo ucwords($_GET['page']);
-                                } else {
-                                    echo "Dashboard";
-                                }
-                                ?>
-                </h2>
-            </div>
             <main class="mdl-layout__content ">
 
         

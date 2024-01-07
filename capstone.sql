@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Jan 2024 pada 18.38
+-- Waktu pembuatan: 07 Jan 2024 pada 15.57
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.3.33
 
@@ -42,7 +42,8 @@ CREATE TABLE `daftar_poli` (
 
 INSERT INTO `daftar_poli` (`id`, `id_pasien`, `id_jadwal`, `keluhan`, `no_antrian`, `tanggal`) VALUES
 (16, 10, 8, 'SAKIT GUSI BOLO', 1, '2024-01-05 17:23:12'),
-(17, 10, 8, 'LORO UNTU LEK', 2, '2024-01-05 17:34:46');
+(17, 10, 8, 'LORO UNTU LEK', 2, '2024-01-05 17:34:46'),
+(18, 11, 8, 'mboh', 3, '2024-01-07 14:29:29');
 
 -- --------------------------------------------------------
 
@@ -62,7 +63,8 @@ CREATE TABLE `detail_periksa` (
 
 INSERT INTO `detail_periksa` (`id`, `id_periksa`, `id_obat`) VALUES
 (7, 7, 12),
-(8, 8, 10);
+(8, 8, 10),
+(9, 9, 10);
 
 -- --------------------------------------------------------
 
@@ -107,7 +109,8 @@ CREATE TABLE `jadwal_periksa` (
 --
 
 INSERT INTO `jadwal_periksa` (`id`, `id_dokter`, `hari`, `jam_mulai`, `jam_selesai`) VALUES
-(8, 22, 'Senin', '07:01:00', '11:30:00');
+(8, 22, 'Senin', '07:01:00', '11:30:00'),
+(9, 23, 'Selasa', '13:01:00', '18:00:00');
 
 -- --------------------------------------------------------
 
@@ -152,7 +155,8 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`id`, `nama`, `alamat`, `no_ktp`, `no_hp`, `no_rm`) VALUES
-(10, 'DEVANDA RADYA ANANTA', 'Kramas', '3398123456789123', '098765432123', '202401-001');
+(10, 'DEVANDA RADYA ANANTA', 'Kramas', '3398123456789123', '098765432123', '202401-001'),
+(11, 'sidik', 'mboh', '123', '098', '202401-002');
 
 -- --------------------------------------------------------
 
@@ -174,7 +178,8 @@ CREATE TABLE `periksa` (
 
 INSERT INTO `periksa` (`id`, `id_daftar_poli`, `tgl_periksa`, `catatan`, `biaya_periksa`) VALUES
 (7, 16, '2024-01-05 18:24:23', 'Makane lele ojo neko neko', 157000),
-(8, 17, '2024-01-05 18:35:49', 'YO MAKANE NDANG MARI ', 155000);
+(8, 17, '2024-01-05 18:35:49', 'YO MAKANE NDANG MARI ', 155000),
+(9, 18, '2024-01-07 15:29:54', 'asd', 155000);
 
 -- --------------------------------------------------------
 
@@ -292,13 +297,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `daftar_poli`
 --
 ALTER TABLE `daftar_poli`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT untuk tabel `detail_periksa`
 --
 ALTER TABLE `detail_periksa`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `dokter`
@@ -310,7 +315,7 @@ ALTER TABLE `dokter`
 -- AUTO_INCREMENT untuk tabel `jadwal_periksa`
 --
 ALTER TABLE `jadwal_periksa`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `obat`
@@ -322,13 +327,13 @@ ALTER TABLE `obat`
 -- AUTO_INCREMENT untuk tabel `pasien`
 --
 ALTER TABLE `pasien`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `periksa`
 --
 ALTER TABLE `periksa`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `poli`

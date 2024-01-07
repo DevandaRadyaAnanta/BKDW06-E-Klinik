@@ -60,14 +60,11 @@ if (isset($_GET['aksi'])) {
     }
 }
 ?>
-<main class="mdl-layout__content ui-form-components">
-
-<div class="mdl-grid mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
-
+<div class="mdl-grid mdl-cell mdl-cell--1-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
     <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--7-col-tablet mdl-cell--4-col-phone">
         <div class="mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-                <h5 class="mdl-card__title-text text-color--white">Tambah Data Jadwal Periksa</h5>
+                <h5 class="mdl-card__title-text text-color--white">Tambah Jadwal Periksa</h5>
             </div>
             <div class="mdl-card__supporting-text">
                 <form class="form form--basic" method="POST" action="" name="myForm" onsubmit="return(validate());">
@@ -137,18 +134,16 @@ if (isset($_GET['aksi'])) {
     </div>
 </div>
 
-<div class="mdl-grid ui-tables">
 
+<div class="mdl-grid ui-tables">
             <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h1 class="mdl-card__title-text">Tabel Jadwal Periksa</h1>
-                    </div>
-                    <div class="mdl-card__supporting-text no-padding">
-                        <table class="mdl-data-table mdl-js-data-table">
+                <div class="mdl-card mdl-shadow--5dp">
+                    <div class="table table-borderless table-striped table-earning">
+                        <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
                                     <th class="mdl-data-table__cell--non-numeric">NO</th>
+                                    <th class="mdl-data-table__cell--non-numeric">NAMA</th>
                                     <th class="mdl-data-table__cell--non-numeric">HARI</th>
                                     <th class="mdl-data-table__cell--non-numeric">JAM MULAI</th>
                                     <th class="mdl-data-table__cell--non-numeric">JAM SELESAI</th>

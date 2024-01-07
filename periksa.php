@@ -37,11 +37,10 @@ if (isset($_POST['simpanData'])) {
     exit();
 }
 ?>
-<main class="mdl-layout__content ui-form-components">
 
-<div class="mdl-grid mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone mdl-cell--top">
+<div class="mdl-grid mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-cell--top">
 
-    <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--7-col-tablet mdl-cell--4-col-phone">
+    <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
         <div class="mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
                 <h5 class="mdl-card__title-text text-color--white">Tambah Data Periksa</h5>
@@ -72,30 +71,24 @@ if (isset($_POST['simpanData'])) {
                         }
                     }
                     ?>
-                    <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone form__article">
-                            <div class="mdl-textfield mdl-js-textfield full-size">
+                    <div class="mdl">
+                        <div class="mdl-cell mdl-cell--1-col-desktop mdl-cell--12-col-tablet mdl-cell--1-col-phone form__article">
                                 <input style="color:black;" type="hidden" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : '' ?>">
-                            </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">
                                 <input style="color:black;" type="hidden" name="id_pasien" value="<?php echo $id_pasien; ?>">
-                            </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">
                                 <input style="color:black;" type="hidden" name="id_dokter" value="<?php echo $id_dokter; ?>">
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">Nomor Antrian
+                            <div class="mdl-textfield full-size">Nomor Antrian
                                 <input style="color:black;" disabled type="text" name="no_antrian" class="form-control" required value="<?php echo $no_antrian ?>">
-                                
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">Nama Pasien
+                            <div class="mdl-textfield full-size">Nama Pasien
                                 <input style="color:black;" disabled type="text" name="id_pasien" class="form-control" required value="<?php echo $nama_pasien ?>">
                                 
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">Nama Dokter
+                            <div class="mdl-textfield full-size">Nama Dokter
                                 <input disabled style="color:black;" type="text" name="id_dokter" class="form-control" required value="<?php echo $nama_dokter ?>">
                                 
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield full-size">Catatan Dokter
+                            <div class="mdl-textfield full-size">Catatan Dokter
                                 <input style="color:black;" type="text" name="catatan" class="form-control" required value="<?php echo $catatan ?>">
                                 <label class="mdl-textfield__label" for="inputCatatan"></label>
                             </div>
@@ -129,12 +122,9 @@ if (isset($_POST['simpanData'])) {
 <div class="mdl-grid ui-tables">
 
             <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
-                <div class="mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h1 class="mdl-card__title-text">Tabel Data Periksa</h1>
-                    </div>
-                    <div class="mdl-card__supporting-text no-padding">
-                        <table class="mdl-data-table mdl-js-data-table">
+                <div class="mdl-card mdl-shadow--5dp">
+                    <div class="table-responsive table--no-card m-b-30">
+                        <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
                                     <th class="mdl-data-table__cell--non-numeric">NO</th>
